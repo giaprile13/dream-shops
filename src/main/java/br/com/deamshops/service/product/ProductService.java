@@ -2,12 +2,17 @@ package br.com.deamshops.service.product;
 
 import br.com.deamshops.model.Category;
 import br.com.deamshops.model.Product;
+import br.com.deamshops.repository.ProductRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class ProductService implements ProductInterface {
+    private ProductRepository productRepository;
+
     @Override
     public Product getProductById(Long id) {
         return null;
@@ -16,6 +21,16 @@ public class ProductService implements ProductInterface {
     @Override
     public void deleteProductById(Long id) {
 
+    }
+
+    @Override
+    public void updateProduct(Product product, Long productId) {
+
+    }
+
+    @Override
+    public List<Product> getAllProducts() {
+        return List.of();
     }
 
     @Override

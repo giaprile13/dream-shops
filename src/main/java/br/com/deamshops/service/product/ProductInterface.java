@@ -11,6 +11,10 @@ public interface ProductInterface {
 
     void deleteProductById(Long id);
 
+    void updateProduct(Product product, Long productId);
+
+    List<Product> getAllProducts();
+
     List<Product> getProductsByCategory(Category category);
 
     List<Product> getProductsByBrand(String brand);
