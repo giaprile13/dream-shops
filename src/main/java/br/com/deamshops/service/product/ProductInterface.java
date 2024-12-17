@@ -1,12 +1,13 @@
 package br.com.deamshops.service.product;
 
 import br.com.deamshops.model.Product;
+import br.com.deamshops.request.AddProductRequest;
 
 import java.util.List;
 
 public interface ProductInterface {
 
-    void addProduct(Product product);
+    Product addProduct(AddProductRequest request);
 
     Product getProductById(Long id);
 
