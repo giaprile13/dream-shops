@@ -2,6 +2,7 @@ package br.com.deamshops.service.product;
 
 import br.com.deamshops.model.Product;
 import br.com.deamshops.request.AddProductRequest;
+import br.com.deamshops.request.ProductUpdateRequest;
 
 import java.util.List;
 
@@ -13,7 +14,7 @@ public interface ProductInterface {
 
     void deleteProductById(Long id);
 
-    void updateProduct(Product product, Long productId);
+    Product updateProduct(ProductUpdateRequest product, Long productId);
 
     List<Product> getAllProducts();
 
